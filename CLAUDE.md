@@ -40,12 +40,12 @@ hvor `p^j(t) = P(Z(t) = j)`.
 
 ### Thiele (fremadrettet):
 
-```
+$$
 dX^j/dt = [δ(t) - β_j(t) + Σ_{k≠j} μ_jk(t)(1 + β_jk(t))] X^j(t)
            - Σ_{k≠j} μ_jk(t) X^k(t)
            - γ_j(t)
            + Σ_{k≠j} μ_jk(t) γ_jk(t)
-```
+$$
 
 ### Kolmogorov (forlæns):
 
@@ -75,7 +75,7 @@ Fire funktioner, alle med signatur `f(t: float) -> float`:
 |Symbol    |Betydning                                    |Fortegn      |
 |----------|---------------------------------------------|-------------|
 |`beta_j`  |Depotafhængig løbende betalingskoefficient   |positiv = ud |
-|`gamma_j` |Depotsuafhængig løbende betalingsrate        |negativ = ind|
+|`gamma_j` |Depotsuafhængig løbende betalingsrate        |positiv = ud |
 |`beta_jk` |Depotafhængig overgangsbetalingskoefficient  |positiv = ud |
 |`gamma_jk`|Depotsuafhængig overgangsbetalingved overgang|positiv = ud |
 
